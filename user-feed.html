@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectSphere - User Feed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive styles -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <meta name="description" content="Stay updated with your connections. View and interact with posts from users you follow on ConnectSphere.">
+    <meta name="keywords" content="social network, user feed, connect, follow, posts">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html">ConnectSphere</a></h1>
+            </div>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Your Feed</h1>
+        <section class="feed">
+            <article class="post">
+                <div class="post-header">
+                    <div class="user-info">
+                        <img src="images/active-user.png" alt="User Avatar" class="avatar">
+                        <h3>Username</h3>
+                    </div>
+                    <time datetime="2024-10-05">October 5, 2024</time>
+                </div>
+                <div class="post-content">
+                    <h4>Post Title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <img src="images/post-image.jpg" alt="Post Visual" class="post-image"> <!-- Image for the post -->
+                </div>
+                <div class="post-actions">
+                    <button class="like-button">Like</button>
+                    <button class="comment-button">Comment</button>
+                    <button class="share-button">Share</button>
+                </div>
+                <div class="comments-section">
+                    <h5>Comments:</h5>
+                    <div class="comment">
+                        <strong>Commenter Name:</strong>
+                        <p>This is a sample comment.</p>
+                    </div>
+                    <!-- Add more comments here -->
+                    <form class="comment-form">
+                        <textarea placeholder="Write a comment..." required></textarea>
+                        <button type="submit">Post Comment</button>
+                    </form>
+                </div>
+            </article>
+            <!-- More posts can be dynamically added here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ConnectSphere. All rights reserved.</p>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <!-- Optional: Add a back-to-top button -->
+    <button id="back-to-top" title="Back to Top">↑</button>
+
+    <script src="js/scripts.js"></script> <!-- Optional JS for interactivity -->
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* General styles for mobile-first design */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Soft background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive Typography */
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark color for contrast */
+}
+
+h1 {
+    font-size: 2.5rem; /* 40px */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+h2 {
+    font-size: 2rem; /* 32px */
+    font-weight: 600; /* Semi-bold for distinction */
+}
+
+h3 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 500; /* Medium weight */
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0077cc; /* Header background color */
+    padding: 15px 0; /* Padding for nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+nav a {
+    padding: 10px 15px; /* Horizontal and vertical padding */
+    text-decoration: none;
+    color: white; /* Text color */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded borders */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #0077cc; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Home Page Section */
+.hero {
+    background: url('../img/hero-background.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative; /* Relative positioning */
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+}
+
+.hero h1,
+.hero h2 {
+    position: relative; /* Position text over the overlay */
+    z-index: 1; /* Bring text above overlay */
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around; /* Space around nav items */
+    }
+
+    h1 {
+        font-size: 3rem; /* 48px */
+    }
+
+    h2 {
+        font-size: 2.5rem; /* 40px */
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        padding: 40px; /* Increased padding for larger screens */
+    }
+
+    h1 {
+        font-size: 4rem; /* 64px */
+    }
+
+    h2 {
+        font-size: 3rem; /* 48px */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        width: 80%; /* Centered on larger screens */
+    }
+
+    .hero {
+        height: 400px; /* Increased hero height */
+    }
+}
+
+@media (min-width: 1200px) {
+    nav {
+        justify-content: flex-start; /* Align left */
+    }
+
+    h1 {
+        font-size: 5rem; /* 80px */
+    }
+
+    h2 {
+        font-size: 3.5rem; /* 56px */
+    }
+
+    h3 {
+        font-size: 2rem; /* 32px */
+    }
+}

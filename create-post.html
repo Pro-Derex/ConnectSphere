@@ -1,0 +1,36 @@
+<!-- create-post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ConnectSphere | Create Post</title>
+</head>
+<body>
+    <header>
+        <div class="logo">ConnectSphere</div>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="logout.html">Logout</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Create a New Post</h2>
+            <form id="create-post-form">
+                <textarea name="content" placeholder="What's on your mind?" required></textarea>
+                <input type="file" name="image" accept="image/*">
+                <input type="text" name="tags" placeholder="Add tags (comma-separated)">
+                <button type="submit">Post</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ConnectSphere. All rights reserved.</p>
+    </footer>
+</body>
+</html>

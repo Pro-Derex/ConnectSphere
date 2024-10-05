@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive styles -->
+    <title>ConnectSphere | Login</title>
+    <style>
+        /* Add some styles to center content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height of viewport */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light grey background */
+            background-image: url('images/background.jpg'); /* Background image */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background */
+        }
+
+        header {
+            position: absolute; /* Position header at the top */
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* White background with opacity */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+            display: flex;
+            justify-content: space-between; /* Space between logo and navigation */
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333; /* Dark grey for contrast */
+        }
+
+        nav a {
+            margin-left: 20px; /* Space between links */
+            color: #007bff; /* Bootstrap primary color */
+            text-decoration: none; /* Remove underline */
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .form-section {
+            background: white; /* White background for the form */
+            padding: 40px;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+            width: 90%; /* Responsive width */
+            max-width: 400px; /* Max width for larger screens */
+            text-align: center; /* Center text */
+        }
+
+        h2 {
+            margin-bottom: 20px; /* Space below heading */
+            color: #333; /* Dark grey for contrast */
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%; /* Full width of container */
+            padding: 10px; /* Inner spacing */
+            margin-bottom: 15px; /* Space between inputs */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 5px; /* Rounded borders */
+        }
+
+        button {
+            padding: 10px 20px; /* Button padding */
+            background: #007bff; /* Bootstrap primary color */
+            color: white; /* White text */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded borders */
+            cursor: pointer; /* Pointer on hover */
+            font-size: 16px; /* Larger text */
+        }
+
+        button:hover {
+            background: #0056b3; /* Darker shade on hover */
+        }
+
+        p {
+            margin-top: 15px; /* Space above paragraph */
+            color: #666; /* Grey text */
+        }
+
+        footer {
+            position: absolute; /* Position footer at the bottom */
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center; /* Center text */
+            background: rgba(255, 255, 255, 0.8); /* White background with opacity */
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ConnectSphere</div>
+        <nav>
+            <a href="signup.html">Sign Up</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign Up here</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ConnectSphere. All rights reserved.</p>
+    </footer>
+</body>
+</html>

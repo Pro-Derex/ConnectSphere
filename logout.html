@@ -1,0 +1,39 @@
+<!-- logout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>ConnectSphere | Logout</title>
+</head>
+<body>
+    <header>
+        <div class="logo">ConnectSphere</div>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="logout-confirmation">
+            <h2>Are you sure you want to logout?</h2>
+            <button onclick="logout()">Yes, Logout</button>
+            <button onclick="window.location.href='dashboard.html'">Cancel</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ConnectSphere. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function logout() {
+            // Logic for logging out goes here
+            alert("You have logged out successfully!");
+            window.location.href = 'index.html'; // Redirect to home page
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectSphere - Edit Profile</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive styles -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon -->
+    <meta name="description" content="Edit your profile details including bio, username, and profile picture on ConnectSphere.">
+    <meta name="keywords" content="social network, edit profile, change username, update bio, profile picture">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html">ConnectSphere</a></h1>
+            </div>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="edit-profile">
+            <h1>Edit Your Profile</h1>
+            <form action="#" method="POST" enctype="multipart/form-data" class="edit-form">
+                <!-- Bio Section -->
+                <div class="form-group">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" placeholder="Tell us something about yourself..." rows="4"></textarea>
+                    <small class="help-text">Max 200 characters.</small>
+                </div>
+
+                <!-- Username Section -->
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Your Username" required minlength="3">
+                    <small class="help-text">Usernames must be unique and between 3-20 characters.</small>
+                </div>
+
+                <!-- Profile Picture Section -->
+                <div class="form-group profile-pic-section">
+                    <label for="profile-pic">Profile Picture:</label>
+                    <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+                    <div class="profile-pic-preview">
+                        <img id="profile-pic-preview-img" src="images/default-avatar.jpg" alt="Profile Picture Preview">
+                    </div>
+                    <small class="help-text">Allowed formats: JPEG, PNG. Max size: 2MB.</small>
+                </div>
+
+                <!-- Password Section -->
+                <div class="form-group">
+                    <label for="password">Change Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter new password">
+                    <small class="help-text">Leave empty if you don't want to change your password.</small>
+                </div>
+
+                <!-- Save Changes Button -->
+                <div class="form-group">
+                    <button type="submit" class="btn-save">Save Changes</button>
+                </div>
+            </form>
+
+            <!-- Delete Account Section -->
+            <section class="delete-account">
+                <h2>Delete Your Account</h2>
+                <p>If you delete your account, all your posts, comments, and followers will be lost. This action is irreversible.</p>
+                <button class="btn-delete">Delete Account</button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ConnectSphere. All rights reserved.</p>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <!-- Optional: Add a back-to-top button -->
+    <button id="back-to-top" title="Back to Top">↑</button>
+
+    <!-- Optional JS scripts for previewing profile picture and other interactivity -->
+    <script>
+        // Profile picture preview functionality
+        document.getElementById('profile-pic').addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('profile-pic-preview-img').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>

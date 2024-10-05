@@ -1,0 +1,53 @@
+<!-- followers-following.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ConnectSphere | Followers/Following</title>
+</head>
+<body>
+    <header>
+        <div class="logo">ConnectSphere</div>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="logout.html">Logout</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="followers-following">
+            <h2>Followers & Following</h2>
+            <div class="tabs">
+                <button id="followers-tab">Followers</button>
+                <button id="following-tab">Following</button>
+            </div>
+            <div id="followers-list" class="tab-content">
+                <div class="user-card">Follower 1</div>
+                <div class="user-card">Follower 2</div>
+            </div>
+            <div id="following-list" class="tab-content" style="display:none;">
+                <div class="user-card">Following 1</div>
+                <div class="user-card">Following 2</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ConnectSphere. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('followers-tab').addEventListener('click', function() {
+            document.getElementById('followers-list').style.display = 'block';
+            document.getElementById('following-list').style.display = 'none';
+        });
+        document.getElementById('following-tab').addEventListener('click', function() {
+            document.getElementById('followers-list').style.display = 'none';
+            document.getElementById('following-list').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

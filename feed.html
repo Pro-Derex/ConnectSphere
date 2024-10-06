@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USer Feed</title>
     <link rel="stylesheet" href="css/styles.css">
-    <title>ConnectSphere | User Feed</title>
-    <meta name="description" content="Stay connected with your friends and discover new content on ConnectSphere. Engage with posts, like, comment, and share your thoughts.">
-    <meta name="keywords" content="ConnectSphere, User Feed, Social Networking, Engage, Like, Comment, Share">
-    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
     <header>
         <div class="logo">ConnectSphere</div>
         <nav>
-            <a href="dashboard.html">Dashboard</a>
+            <a href="index.html">Dashboard</a>
             <a href="explore.html">Explore</a>
             <a href="about.html">About</a>
             <a href="logout.html">Logout</a>
@@ -23,62 +19,27 @@
     </header>
 
     <main>
-        <section class="feed">
-            <h2>Your Feed</h2>
-            <p>Welcome back! Here’s what’s happening in your network. Engage with posts, share your thoughts, and stay connected.</p>
+        <h1>Your Feed</h1>
+        <p>Welcome back! Here’s what’s happening in your network.</p>
 
-            <!-- Add dynamic content here -->
-            <div class="post">
-                <h3>Post Title 1</h3>
-                <p>Post content goes here. This could include text, images, or links that showcase what the user wants to share with their network.</p>
-                <div class="post-meta">
-                    <span class="post-author">Posted by: User100</span>
-                    <span class="post-time">4 hours ago</span>
-                </div>
-                <div class="actions">
-                    <button class="like-button">Like</button>
-                    <button class="comment-button">Comment</button>
-                    <button class="share-button">Share</button>
-                </div>
-                <div class="comments">
-                    <h4>Comments:</h4>
-                    <div class="comment">
-                        <p><strong>User456:</strong> Great post! Thanks for sharing.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="post">
-                <h3>Post Title 2</h3>
-                <p>Post content goes here. This is another example of how users can express themselves and share important moments or thoughts.</p>
-                <div class="post-meta">
-                    <span class="post-author">Posted by: User789</span>
-                    <span class="post-time">4 hours ago</span>
-                </div>
-                <div class="actions">
-                    <button class="like-button">Like</button>
-                    <button class="comment-button">Comment</button>
-                    <button class="share-button">Share</button>
-                </div>
-                <div class="comments">
-                    <h4>Comments:</h4>
-                    <div class="comment">
-                        <p><strong>User012:</strong> I completely agree with this!</p>
-                    </div>
-                </div>
-            </div>
+        <div class="card">
+            <h3>Post Title 1</h3>
+            <p>Post content goes here...</p>
+        </div>
 
-            <!-- Form to create a new post -->
-            <div class="new-post">
-                <h3>Create a New Post</h3>
-                <form action="#" method="POST">
-                    <label for="post-title">Post Title:</label>
-                    <input type="text" id="post-title" name="post-title" required>
-                    <label for="post-content">Post Content:</label>
-                    <textarea id="post-content" name="post-content" rows="4" required></textarea>
-                    <button type="submit">Post</button>
-                </form>
-            </div>
-        </section>
+        <div class="card">
+            <h3>Post Title 2</h3>
+            <p>Post content goes here...</p>
+        </div>
+
+        <div class="card">
+            <h3>Create a New Post</h3>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Post Title">
+                <textarea placeholder="Write your thoughts..."></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </div>
     </main>
 
     <footer>
@@ -90,5 +51,4 @@
         </ul>
     </footer>
 </body>
-
 </html>
